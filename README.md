@@ -11,14 +11,6 @@ It works directly on the triangulation edge data provided in the **CGSHOP2026 JS
 
 ---
 
-## 🚀 Features
-- **Pure Python** — no external geometry libraries.
-- **Accurate flip logic** — identifies flippable edges as diagonals of quadrilaterals.
-- **Parallel flip capability** — flips up to `k` non-conflicting edges per step.
-- **A\* search** with a simple heuristic: number of edges not present in the target triangulation.
-- **Modular** — clean separation of input parsing (`inputparser.py`) and search (`a_star_parallel.py`).
-
----
 
 ## 📂 Project Structure
 ```
@@ -27,10 +19,10 @@ BTP/
 ├── venv/                     # Virtual environment (created locally)
 ├── inputparser.py            # JSON instance parser
 ├── a_star_parallel.py        # A* implementation for flip distance
+├── ARAStar.py                # ARA* implementation to find the central triangulation
+├── SubmissionGenrator.py     # Generates submission ready artifacts for CG:SHOP 2026
 ├── instance.json             # Example 5-point instance file
 ├── README.md                 # This file
-└── requirements.txt          # Optional, if additional dependencies are added later
-
 ````
 
 ## 🧰 Environment Setup
